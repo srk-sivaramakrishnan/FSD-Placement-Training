@@ -1,2 +1,2 @@
-hit
-console.log(siva)
+var a=10;
+console.log(a)
