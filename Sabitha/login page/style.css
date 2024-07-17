@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #bfb3f5;
+}
+
+header {
+    background: #8275e3;
+    color: #181414;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.about, .skills, .social-media, .contact-form {
+    background-color: #9192f3;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(33, 27, 58, 0.1);
+}
+
+.about h2, .skills h2, .social-media h2, .contact-form h2 {
+    color: white;
+}
+
+.skills ul, .skills ol {
+    list-style-type: none;
+    color: #514f51;
+    padding: 0;
+}
+
+.skills ul li, .skills ol li {
+    margin-bottom: 5px;
+}
+
+.social-media .icons {
+    margin-top: 10px;
+}
+
+.social-media .icons a {
+    color: black;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.social-media .icons a:hover {
+    color: #007bff;
+}
+
+.contact-form {
+    width: 100%;
+    height: 100vh;
+    background: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    background: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+form h3 {
+    color: #555;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+form input,
+form textarea {
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+}
+
+form button {
+    padding: 15px;
+    background: #ff5361;
+    color: white;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin-top: 20px; /* changed from auto to 20px */
+    border-radius: 20px;
+}

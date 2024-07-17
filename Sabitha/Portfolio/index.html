@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact Me!</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm Sabitha, a web developer with a passion for creating beautiful and functional websites. Welcome to my portfolio!</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skill">
+            <h3>HTML</h3>
+            <div class="progress-bar">
+                <div class="progress" style="width: 90%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <h3>CSS</h3>
+            <div class="progress-bar">
+                <div class="progress" style="width: 80%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <h3>JavaScript</h3>
+            <div class="progress-bar">
+                <div class="progress" style="width: 75%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <h3>SQL</h3>
+            <div class="progress-bar">
+                <div class="progress" style="width: 70%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <h3>Figma</h3>
+            <div class="progress-bar">
+                <div class="progress" style="width: 65%;"></div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project 1</h3>
+            <p>My first project, the Netflix Clone, is a web application designed to replicate the core functionalities and user interface of the popular streaming service, Netflix. This clone includes essential features such as user authentication, a responsive design, browsing and searching for movies and TV shows, personalized recommendations, and video playback. The application allows users to create accounts, log in, and manage their watchlists, simulating a real-world streaming experience.</p>
+        </div>
+        <div class="project">
+            <h3>Project 2</h3>
+            <p>My second project, the Online IDE, is a web-based application that allows users to write, edit, compile, and run code directly from their web browsers. This IDE supports multiple programming languages, providing a versatile platform for developers, students, and hobbyists to work on their coding projects without the need to install software on their local machines. Key features include syntax highlighting, code completion, real-time collaboration, version control integration, and debugging tools. The IDE aims to streamline the coding process by offering a seamless and accessible environment for code development and testing.</p>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Me!</h2>
+        <form id="contactForm">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="e.g. Sabi">
+
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="e.g. sabi123@gmail.com">
+
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Subject">
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Message"></textarea>
+
+            <button type="button" onclick="sendMessage();">Send Message</button>
+        </form>
+    </section>
+    
+    <script src="https://cdn.emailjs.com/dist/email.min.js">
+
+    </script>
+<script>
+    function sendMessage() {
+        emailjs.init("IJX3bllGHF7tBzPm4");
+
+        var serviceID = "service_esue9vc";
+        var templateID = "template_d0l0t57";
+
+        var params = {
+            sendername: document.querySelector("#name").value,
+            senderemail: document.querySelector("#email").value,
+            subject: document.querySelector("#subject").value,
+            message: document.querySelector("#message").value
+        };
+
+        emailjs.send(serviceID, templateID, params)
+        .then(function(response) {
+            alert('Thank you, ' + params['sendername'] + '! Your message has been sent.');
+        }, function(error) {
+            alert('Failed to send message. Please try again later.');
+            console.log('FAILED...', error);
+        });
+    }
+</script>
+
+</body>
+</html>
