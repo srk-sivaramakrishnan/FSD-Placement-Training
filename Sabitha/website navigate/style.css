@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    color:whitesmoke;
+    background-color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+
+main {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+
+section {
+    background-color: #444;
+    border-radius: 6px;
+    border: 2px solid #11c2ee; 
+    padding: 20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.row-cols-2 > .col {
+    padding: 5px;
+}
+
+
+.about-us {
+    padding: 60px 0;
+}
+
+.about-us h2 {
+    margin-bottom: 30px;
+}
+
+.about-us h3 {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.about-us ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+
+.website-logo {
+    width: 75px;
+    height: auto;
+    border-radius: 5px;
+}
+
+
+.text-content {
+    max-width: 600px;
+}
+
+.text-content p {
+    margin: 0 0 10px;
+}
+
+.text-content b {
+    font-size: 1.2em;
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
