@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section id="registration-form">
+            <img src="images/image2.jpg" alt="Website Image" class="website-image">
+            <h1><i>REGISTER</i></h1>
+            <form id="form">
+                <div class="grid-container">
+                    <div class="form-group">
+                        <label for="fullname">Full Name:</label>
+                        <input type="text" id="fullname" name="fullname" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastname">Last Name:</label>
+                        <input type="text" id="lastname" name="lastname" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="dob">Date of Birth:</label>
+                        <input type="date" id="dob" name="dob" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm-password">Confirm Password:</label>
+                        <input type="password" id="confirm-password" name="confirm-password" required>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn">Register</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+
+    <script>
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const form = document.getElementById('form');
+        const passwordInput = document.getElementById('password');
+        const confirmPasswordInput = document.getElementById('confirm-password');
+        const emailInput = document.getElementById('email');
+    
+        form.addEventListener('submit', function(e) {
+            let valid = true;
+    
+            // Clear previous error messages
+            clearErrors();
+    
+            // Validate password and confirm password
+            if (passwordInput.value !== confirmPasswordInput.value) {
+                showError('confirm-password', 'Passwords do not match.');
+                valid = false;
+            }
+    
+            // Validate email
+            if (!validateEmail(emailInput.value.trim())) {
+                showError('email', 'Please enter a valid email address.');
+                valid = false;
+            }
+    
+            if (!valid) {
+                e.preventDefault(); // Prevent form submission if invalid
+            }
+        });
+    
+        function validateEmail(email) {
+            const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return regex.test(email);
+        }
+    
+        function showError(id, message) {
+            const input = document.getElementById(id);
+            const error = document.createElement('span');
+            error.className = 'error-message';
+            error.textContent = message;
+            input.parentElement.appendChild(error);
+        }
+    
+        function clearErrors() {
+            document.querySelectorAll('.error-message').forEach(el => el.remove());
+        }
+    });
+
+</script>
+    
+</body>
+</html>
