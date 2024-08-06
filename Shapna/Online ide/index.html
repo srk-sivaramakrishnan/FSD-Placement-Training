@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online IDE</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Online IDE</h1>
+        </header>
+        <main>
+            <div class="editor">
+                <div class="editor-section">
+                    <h2>HTML</h2>
+                    <textarea id="htmlEditor" placeholder="Write HTML here..."></textarea>
+                </div>
+                <div class="editor-section">
+                    <h2>CSS</h2>
+                    <textarea id="cssEditor" placeholder="Write CSS here..."></textarea>
+                </div>
+                <div class="editor-section">
+                    <h2>JavaScript</h2>
+                    <textarea id="jsEditor" placeholder="Write JavaScript here..."></textarea>
+                </div>
+            </div>
+            <div class="output">
+                <iframe id="outputFrame"></iframe>
+            </div>
+        </main>
+        <footer>
+            <button onclick="runCode()">Run</button>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
