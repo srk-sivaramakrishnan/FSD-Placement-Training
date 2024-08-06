@@ -1,0 +1,179 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background: #333;
+    color: rgb(133, 133, 198);
+    padding: 1rem 0;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    display: inline;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    float: right;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+nav ul li a {
+    color: rgb(244, 147, 147);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    background: url('1.avif');
+    color: #fff;
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.5rem;
+}
+
+.btn {
+    background: #d2691e;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #a0522d;
+}
+
+section {
+    padding: 3rem 0;
+}
+
+.menu {
+    background: url('3.jpg');
+}
+
+.menu h2{
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.menu-item {
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    width: 45%;
+    margin: 1rem 0;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+}
+
+.menu-item h3 {
+    margin-top: 0;
+}
+
+.about, .contact {
+    text-align: center;
+}
+
+.about{
+    background: url('3.jpg');
+    color: #fff;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact form input, .contact form textarea {
+    width: 100%;
+    max-width: 500px;
+    margin: 0.5rem 0;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact form button {
+    margin-top: 1rem;
+}
+
+.location{
+    background: rgb(58, 43, 43);
+    color: #fff;
+}
+
+.location .btn{
+    margin-left: 680px;
+}
+
+.location p{
+    margin-bottom: 30px;
+}
+
+.contact{
+    background: #887373;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+#location h2,p{
+    text-align: center;
+}
