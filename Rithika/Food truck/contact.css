@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.header {* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.header {
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.navbar {
+    text-align: center;
+}
+
+.navbar a {
+    margin-left: 80px;
+    margin-right: 20px;
+    text-decoration: none;
+    color: rgb(46, 219, 46);
+}
+
+.menu h3, h4 {
+    text-align: center;
+}
+
+.menu p {
+    text-align: center;
+}
+
+.menu .ctn1,
+.menu .ctn2 {
+    width: 50%;
+    float: left;
+    margin: 0 auto;
+}
+
+form {
+    color: rgb(238, 9, 196);
+    display: block;
+    text-align: left;
+    margin: 0 auto;
+    width: 80%;
+}
+
+form label {
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="date"],
+form input[type="time"],
+form input[type="number"] {
+    width: 50%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    background-color: #0f0;
+    color: #000;
+    font-weight: bold;
+    padding: 10px 50px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 160px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+.footer {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer a {
+    margin-left: 90px;
+}
+
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.navbar {
+    text-align: center;
+}
+
+.navbar a {
+    margin-left: 80px;
+    margin-right: 20px;
+    text-decoration: none;
+    color: rgb(46, 219, 46);
+}
+
+.menu h3, h4 {
+    text-align: center;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 60px;
+    
+}
+.menu .para{
+    width: 800px;
+    font-size: 20px;
+    color: rgb(238, 9, 196);
+}
+
+.ctn1 p{
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;}
+
+.footer {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer a {
+    margin-left: 90px;
+}
+form{
+    color: rgb(238, 9, 196);
+}
+.menu p{
+   font-size: 20px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="date"],
+form input[type="time"],
+form input[type="number"],
+textarea{
+    width: 100%;
+    padding: 10px 50px ;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    background-color: #0f0;
+    color: #000;
+    font-weight: bold;
+    padding: 10px 50px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}

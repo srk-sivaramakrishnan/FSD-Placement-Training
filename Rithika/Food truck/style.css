@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+}
+.header{
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+}
+.navbar{
+    text-align: center;
+}
+.navbar a{
+    margin-left: 80px;
+    margin-right: 20px;
+    text-decoration: none;
+    color: rgb(46, 219, 46);
+}
+.logo{
+    /* margin-left: 550px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.para{
+    color: white;
+    text-align: center;
+    width: 500px;
+    margin-left: 500px;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.footer{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer a{
+    margin-left: 90px;
+}
