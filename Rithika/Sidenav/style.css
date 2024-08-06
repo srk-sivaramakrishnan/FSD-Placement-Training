@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: url('images/bg1.jpeg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+}
+.sidenav{
+    width: 110px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 30px 15px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    transition: width 0.5s;
+}
+.user{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60px;
+    font-size: 12px;
+    padding: 10px;
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.user div{
+    display: none;
+}
+.user h2{
+    font-size: 15px;
+    font-weight: 600;
+
+}
+.user-img{
+    width: 40px;
+    border-radius: 50%;
+    margin: auto;
+}
+.star-img{
+    width: 20px;
+    display: none;
+
+}
+ul{
+    padding: 0 15px;
+    list-style: none;
+}
+ul li{
+   margin: 30px 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+}
+ul li img{
+    width: 30px;
+    margin-right: 0px;
+    
+}
+ul li p{
+  display: none;
+}
+.sidenav:hover{
+    width: 250px;
+}
+.sidenav:hover .user div{
+    display: block;
+}
+.sidenav:hover .user{
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+}
+.sidenav:hover .star-img{
+    display: block;
+}
+.sidenav:hover .user-img{
+    margin: 0;
+}
+.sidenav:hover ul li p{
+    display: block;
+}
+.sidenav:hover ul li img{
+    margin-right: 10px;
+}
+.sidenav:hover ul li{
+    justify-content: flex-start;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% - 110px);
+    margin-left: 110px;
+}
+.content{
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+}
+.content img{
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.content-text {
+   color: black;
+   font-size: 25px;
+   width: 400px;
+}

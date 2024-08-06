@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.header {
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.navbar {
+    text-align: center;
+}
+
+.navbar a {
+    margin-left: 80px;
+    margin-right: 20px;
+    text-decoration: none;
+    color: rgb(46, 219, 46);
+}
+
+.menu h3, h4 {
+    text-align: center;
+}
+
+.menu p {
+    text-align: center;
+}
+
+.menu .ctn1,
+.menu .ctn2,
+.menu .ctn3 {
+    width: 33.33%;
+    float: left;
+    margin: 0 auto;
+}
+
+.menu .ctn1 .head,
+.menu .ctn2 .head,
+.menu .ctn3 .head {
+    color: rgb(238, 9, 196);
+}
+
+.grid-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+}
+
+.footer {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer a {
+    margin-left: 90px;
+}

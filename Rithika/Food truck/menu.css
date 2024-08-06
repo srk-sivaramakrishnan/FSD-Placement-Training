@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    background-color: black;
+    color: white;
+   
+}
+.header{
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+}
+.navbar{
+    text-align: center;
+}
+.navbar a{
+    margin-left: 80px;
+    margin-right: 20px;
+    text-decoration: none;
+    color: rgb(46, 219, 46);
+}
+
+.menu h3,h4{
+    text-align: center;
+}
+.menu p{
+    text-align: center;
+}
+.menu .ctn1{
+    
+    width: 33.33%;
+    float: right;
+    margin: 0 auto;
+    
+}
+
+.ctn1 p h4{
+   width: 100px;
+   
+}
+.ctn2 p h4{
+    width: 100px;
+}
+.ctn3 p h4{
+    width: 100px;
+}
+.menu .ctn1 .head{
+    color: rgb(238, 9, 196);
+}
+
+.menu .ctn2 img{
+    margin-top: 40px;
+    margin-left: 130px;
+    width: 200px;
+  
+}
+.menu .ctn1 img{
+    margin-top: 0;
+    margin-left: 150px;
+    width: 170px;
+  
+}
+.menu .ctn2{
+    width: 33.33%;
+    float: left;
+   
+}
+.menu .ctn2 .head{
+    color: rgb(238, 9, 196);
+}
+.menu .ctn3 .head{
+    color: rgb(238, 9, 196);
+}
+.menu .ctn3{
+    width: 33.33%;
+    
+    margin: 0 auto;
+}
+.menu{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.footer{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer a{
+    margin-left: 90px;
+}
