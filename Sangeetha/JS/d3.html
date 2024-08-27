@@ -1,0 +1,14 @@
+<button id="btn" onclick="update(this, 'Blue')">Change Color</button> <br> <br>
+<button id="btns" onclick="update(this, 'Red')">Change Color</button> <br> <br>
+<button id="btnss" onclick="update(this, 'Green')">Change Color</button>
+
+
+<script>
+    var btn=document.getElementById("btn")
+    var btns=document.getElementById("btns")
+    var btnss=document.getElementById("btnss")
+
+    function update(button, color){
+        button.style.backgroundColor = color;
+    }
+</script>

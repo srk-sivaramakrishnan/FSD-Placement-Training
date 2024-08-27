@@ -1,0 +1,13 @@
+<button onclick="update()">Add</button>
+<div id="result"></div>
+
+<script>
+    var div=document.getElementById("result")
+
+    function update(){
+        //create new element
+        var listenitem = document.createElement("h1")
+        listenitem.textContent="Sangeetha"
+        div.append(listenitem)
+    }
+</script>
