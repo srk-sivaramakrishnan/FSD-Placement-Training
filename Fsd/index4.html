@@ -1,0 +1,76 @@
+<h1>Guess the number</h1>
+<input id="guessnumber">
+<button onclick="check()">Check</button>
+<p id="result">Wrong or Right</p>
+<p id="score">Score:10</p>
+
+<script>
+    var guessnumber = document.getElementById("guessnumber")
+    var result = document.getElementById("result")
+    var randomnumber = Math.floor(Math.random()*10)+1
+    var score = document.getElementById("score")
+    var totscore = 10
+    
+    function check(){
+        var enterednumber = guessnumber.value
+        if(randomnumber==enterednumber)
+        {
+            console.log("Right")
+            result.textContent = "Right"
+            alert("You won")
+        } else{
+            totscore = totscore - 1
+             result.textContent = "Wrong"
+             score.textContent = "score"+totscore
+           
+        }
+    }
+
+</script>
+
+
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
+
+    #guessnumber {
+        width: 40px;
+        height: 25px;
+        font-size: 18px;
+        padding: 5px;
+        margin: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    #check-btn {
+        width: 100px;
+        height: 30px;
+        font-size: 18px;
+        padding: 5px;
+        margin: 10px;
+        background-color: #4CAF50;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    #check-btn:hover {
+        background-color: #3e8e41;
+    }
+
+    #result {
+        font-size: 24px;
+        font-weight: bold;
+        margin: 10px;
+    }
+
+    #score {
+        font-size: 18px;
+        margin: 10px;
+    }
+</style>

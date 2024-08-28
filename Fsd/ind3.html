@@ -1,0 +1,37 @@
+<button id="btn" onclick="update(event)">Change Color</button>
+<button id="btn1" onclick="update(event)">Color</button>
+<button id="btn2" onclick="update(event)">Color2</button>
+<button id="btn3" onclick="update(event)">Color3</button>
+
+<script>
+    function update(event) {
+        const target = event.target;
+        // Change the background color based on the button's id
+        if (target.id === 'btn') {
+            target.style.backgroundColor = 'lightblue';
+        } else if (target.id === 'btn1') {
+            target.style.backgroundColor = 'blue';
+        } else if (target.id === 'btn2') {
+            target.style.backgroundColor = 'red';
+        }
+        else if (target.id === 'btn3') {
+            target.style.backgroundColor = 'green';
+        }
+    }
+</script>
+
+<style>
+    *{
+        margin: 20;
+        text-align: center;
+    }
+
+    button{
+        width: 100px;
+        height: 50px;
+    }
+
+    button:hover{
+    opacity: 0.5;
+    }
+</style>
