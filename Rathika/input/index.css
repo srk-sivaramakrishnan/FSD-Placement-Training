@@ -1,0 +1,27 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: rgb(105, 219, 77);
+}
+#inputbox{
+    display: block;
+    margin: 50px auto;
+    padding: 25px;
+    background-color: rgb(198, 233, 71);
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 2px;
+}
+#result{
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-size: 2.5rem;
+    color: rgb(208, 255, 0);
+}

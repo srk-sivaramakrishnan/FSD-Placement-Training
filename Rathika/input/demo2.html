@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color</title>
+    <link rel="stylesheet" href="demo2.css">
+</head>
+<body>
+    <button id="btn" onclick="update(event)">Click on me!!</button>
+    <button id="btnn" onclick="update(event)">Click on me!!</button>
+    <button id="bt" onclick="update(event)">Click on me!!</button>
+
+
+<script>
+  
+    var btn = document.getElementById("btn");
+    var btnn = document.getElementById("btnn");
+    var bt = document.getElementById("bt");
+
+    function update(event) {
+        
+        if (event.target === btn) {
+            btn.style.backgroundColor = "orange";
+        } else if (event.target === btnn) {
+            btnn.style.backgroundColor = "violet";
+        } else if (event.target === bt) {
+            bt.style.backgroundColor = "lightblue";
+        }
+    }
+</script>
+
+</body>
+</html>
+

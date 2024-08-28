@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Online IDE</title>
+</head>
+<body>
+    <h1>Rithika S - 21CSB30</h1>
+
+    <div class="container">
+       <div class="left">
+        <label><i class="fa-brands fa-html5"></i> HTML</label>
+        <textarea id="html-code" onkeyup="run()"></textarea>
+
+        <label><i class="fa-brands fa-css3-alt"></i> CSS</label>
+        <textarea id="css-code" onkeyup="run()"></textarea>
+
+        <label><i class="fa-brands fa-js"></i> Javascript</label>
+        <textarea id="js-code" onkeyup="run()"></textarea>
+
+       </div>
+       <div class="right">
+        <label><i class="fa-solid fa-play"></i> Output</label>
+         <iframe id="output"></iframe>
+       </div>
+    </div>
+    <script>
+    function run(){
+        let htmlcode = document.getElementById("html-code").value;
+        let csscode = document.getElementById("css-code").value;
+        let jscode = document.getElementById("js-code").value;
+        let output = document.getElementById("output");
+        
+        output.contentDocument.body.innerHTML = htmlcode + "<style>"+ csscode + "</style>";
+        output.contentWindow.eval(jscode);
+    }   
+</script>
+</body>
+
+</html>

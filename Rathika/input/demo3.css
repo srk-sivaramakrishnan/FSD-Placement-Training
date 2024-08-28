@@ -1,0 +1,28 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: rgb(186, 185, 229);
+
+}
+button{
+    display: flex;
+    margin: 50px auto;
+    padding: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    background-color: rgb(118, 177, 201);
+    justify-content:space-between;
+    color: rgb(35, 38, 194) ;
+    border: none;
+    border-radius: 10px;
+}
+
+#result{
+    text-align: center;
+    font-size: 3rem;
+    color: rgb(20, 56, 87);
+}
