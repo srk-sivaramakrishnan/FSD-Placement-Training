@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #bc2ece;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        #result {
+            margin-top: 20px;
+            text-align: center;
+        }  
+        #result h1 {
+            color: #333;
+            font-size: 24px;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    
+
+<button onclick="update()">Add</button>
+<div id="result">
+
+</div>
+<script>
+    var div=document.getElementById("result");
+    function update(){
+        var listenitem = document.createElement("h1");
+        listenitem.textContent = "Rithika";
+        div.append(listenitem)
+    }
+</script>
+</body>
+</html>

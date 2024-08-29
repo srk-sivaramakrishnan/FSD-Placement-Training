@@ -1,8 +1,93 @@
-<h1 id="title">
-  Hello World
-</h1>
-<script>
-  var para = document.getElementById("title")
-  console.log(para.textContent)
-  para.textContent = "Bye World"
-</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guess the Number</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    h1 {
+      color: #4caf50;
+    }
+
+    input {
+      padding: 10px;
+      border: 2px solid #4caf50;
+      border-radius: 5px;
+      font-size: 16px;
+      margin-right: 10px;
+      width: 80px;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: #4caf50;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    p {
+      font-size: 18px;
+      font-weight: bold;
+      margin: 5px;
+    }
+
+    #res {
+      color: #d32f2f;
+    }
+
+    #sc {
+      color: #1976d2;
+    }
+  </style>
+</head>
+<body>
+  <h1>Guess the Number</h1>
+  <input id="gn"  >
+  <button onclick="check()">Check</button>
+  <p id="res">You are wrong/right</p>
+  <p id="sc">Score: 20</p>
+  <script>
+    var guess = document.getElementById("gn");
+    var res = document.getElementById("res");
+    var ran = Math.floor(Math.random()*10)+1;
+    var sc = document.getElementById("sc");
+    var tot = 20;
+    function check(){
+      var enter = parseInt(guess.value, 10);
+      if (ran == enter) {
+        console.log("Right");
+        alert("You won!!");
+        res.textContent = "Right!";
+        res.style.color = "#4caf50";
+      } else {
+        tot -= 1;
+        res.textContent = "Wrong!";
+        res.style.color = "#d32f2f";
+        sc.textContent = "Score: " + tot;
+      }
+    }
+  </script>
+</body>
+</html>
